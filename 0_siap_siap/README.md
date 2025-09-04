@@ -5,20 +5,6 @@ Tujuan minggu ini adalah menyiapkan kamu untuk menulis kode dan memperkenalkan k
 
 ```
 minggu-0/
-├── README.md                      # penjelasan minggu 0.                           
-│   
-├── TUGAS/                  
-│   ├── T0_test_hello_world.py     # Lembar Tugas minggu 0. boleh kerjain di sini.
-│   │   
-│   └── tests/
-│       └── test_T0_hello_world.py # Unit test supaya kamu bisa cek jawabanmu sendiri.
-│           
-├── TUTOR/                   
-│   ├── tutor0_setup_lab.md        # Buku Prak. isinya link pretest + tutor + live coding + instruksi tugas.
-│   ├── tutor0_setup_lab.pdf      
-│   │   
-│   └── tes_awal0.pdf              # Tes_Awal mingguan.      
-│           
 ├── CONFIDENTIAL_MATERI/           # Soal Materi mingguan. cuma ada di repo semuaan.      
 │   ├── M0_test_hello_world.md           
 │   └── M0_test_hello_world.pdf  
@@ -27,10 +13,28 @@ minggu-0/
 │   ├── kunci_T0_test_hello_world.md   
 │   │   
 │   └── kunci_M0_test_hello_world.md    
-│     
-└── README_assets/                 
-    ├── git-flowchart.png
-    └── diagram-venv.png
+│  
+├── KONTEN_TUTOR/                   
+│   ├── tutor0_setup_lab.md        # Buku Prak. isinya link pretest + tutor + live coding + instruksi tugas.
+│   ├── tutor0_setup_lab.pdf      
+│   │   
+│   └── tes_awal0.pdf              # Tes_Awal mingguan.      
+│   
+├── README_assets/                 
+│   ├── git-flowchart.png
+│   └── diagram-venv.png
+│
+├── README.md                      # penjelasan singkat prak mingguan                       
+│ 
+├── tests/
+│   └── test_T0_hello_world.py     # Unit test supaya kamu bisa cek jawabanmu sendiri.
+│            
+└─── TUGAS/                   
+    └── T0_test_hello_world.py     # Lembar Tugas minggu 0. boleh kerjain di sini.
+  
+   
+          
+ 
 
 ```
 ---

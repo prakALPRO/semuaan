@@ -1,4 +1,3 @@
-
 ### Minggu 0: Siap-Siap Sebelum Prak 🚀
 
 Tujuan minggu ini adalah menyiapkan kamu untuk menulis kode dan memperkenalkan kamu pada alat-alat dasar yang akan digunakan di prak ALPRO  
@@ -31,58 +30,58 @@ minggu-0/
 │            
 └─── TUGAS/                   
     └── T0_test_hello_world.py     # Lembar Tugas minggu 0. boleh kerjain di sini.
-  
-   
-          
- 
-
 ```
+
 ---
 
 ### Konsep Utama & Kegiatan Lab
 
-**1. Mengatur Area Kerja**  
+1. **Mengatur Area Kerja**  
+   
+   * **Mengapa:** Sebelum menulis kode, siswa perlu menyiapkan lingkungan kerja.  
+   
+   * **Bagaimana:** Tawarkan dua opsi: menginstal Python secara lokal atau menggunakan IDE online (seperti Replit).  
+   
+   * **Live Coding:** Bimbing siswa untuk menginstal atau membuka IDE, memastikan semuanya berfungsi.  
 
-    * **Mengapa:** Sebelum menulis kode, siswa perlu menyiapkan lingkungan kerja.  
-    
-    * **Bagaimana:** Tawarkan dua opsi: menginstal Python secara lokal atau menggunakan IDE online (seperti Replit).  
-    
-    * **Live Coding:** Bimbing siswa untuk menginstal atau membuka IDE, memastikan semuanya berfungsi.  
-    
-2.  **Mengenal GitHub dan juga Git**  
+2. **Mengenal GitHub dan juga Git**  
+   
+   * **Mengapa:** Infrastuktur untuk menghasilkan dan berbagi kode
+   
+   * **Bagaimana:** Fokus pada empat perintah inti: `git clone`, `git add`, `git commit`, dan `git push`.  
+   
+   * **Live Coding:** Bimbing siswa untuk mengkloning repositori template mingguan, membuat perubahan kecil pada file, dan meng `git push` kembali ke GitHub.
 
-    * **Mengapa:** Infrastuktur untuk menghasilkan dan berbagi kode
-    
-    * **Bagaimana:** Fokus pada empat perintah inti: `git clone`, `git add`, `git commit`, dan `git push`.  
-    
-    * **Live Coding:** Bimbing siswa untuk mengkloning repositori template mingguan, membuat perubahan kecil pada file, dan meng `git push` kembali ke GitHub.
-
-3.  **Program Pertama Anda**  
-
-    * **Mengapa:** Ini adalah momen puncak, di mana mereka berhasil membuat dan menjalankan program pertama.  
-    
-    * **Bagaimana:** Ajarkan sintaks dasar untuk mencetak teks.  
-    
-    * **Live Coding:** Minta siswa untuk menulis dan menjalankan program "Halo, Dunia!".
+3. **Menjalankan Program Pertama Anda**  
+   
+   * **Mengapa:** Ini adalah momen puncak, di mana mereka berhasil membuat dan menjalankan program pertama.  
+   
+   * **Bagaimana:** Ajarkan sintaks dasar untuk mencetak teks.  
+   
+   * **Live Coding:** Minta siswa untuk menulis dan menjalankan program "Halo, Dunia!".
 
 ---
 
 ### Cheatsheet
+
 **Screenshot Kegunaan Area Kerja:**
+
 * (notebook? vscode extension? thonny? notepad? notepad++ ?) jujur bingung ajarin yg mana.
 
 **Perintah Git Dasar:**
+
 * `git clone [URL]`
 * `git add .`
 * `git commit -m "pesan"`
 * `git push`
 
 **Sintaks Python Dasar:**
+
 * `print("teks")`
 
 ---
 
-### Tugas  
+### Tugas
 
 * **Soal:** Buat program Python yang mencetak kalimat "Halo, Dunia! Saya [Nama Anda]." di terminal.
 * **Kegiatan Tes Materi (Mandiri):** Berikan siswa file kode dengan kesalahan sederhana dan minta mereka memperbaikinya. Ini mendorong mereka untuk belajar cara membaca pesan kesalahan.

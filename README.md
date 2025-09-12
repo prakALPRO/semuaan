@@ -1,3 +1,11 @@
+---
+documentclass: article
+header-includes: |
+  \usepackage{fontspec}
+  \setmainfont{Noto Serif}
+  \setmonofont{Ubuntu Mono}
+---
+
 # rencana dari minggu 0-7 + TA
 ***
 
@@ -42,19 +50,17 @@
 
 ---
 
-#### **Week 5: Collections (Lists and Tuples)**
+#### **Week 5: Computational THingking & Problem Solving**
+* **Concepts:** how to solve problems practically
+* **Lab:** a real-world problem, we tryna solve in less than 1 hour.
+* **Materials:** A review of 1-4.
+---
+
+#### **Week 6: Collections (Dictionaries and Sets)**
 * **Concepts:** Storing multiple items in a single variable.
 * **Lab:** Introduce **lists** as a mutable, ordered collection.
 * **Lab:** Introduce **tuples** as an immutable, ordered collection and explain the difference.
 * **Materials:** A reference sheet on common list methods (`.append()`, `.remove()`, etc.).
-
----
-
-#### **Week 6: Collections (Dictionaries and Sets)**
-* **Concepts:** Storing and accessing data in different ways.
-* **Lab:** Introduce **dictionaries** for key-value pairs.
-* **Lab:** Introduce **sets** for storing unique items.
-* **Materials:** A cheat sheet on dictionary and set methods.
 
 ---
 
@@ -63,7 +69,11 @@
 * **Lab:** Teach how to define and call functions, including arguments and `return` values.
 * **Lab:** Show how to use functions to make code cleaner and more modular.
 * **Materials:** A template for writing well-documented functions.
-```
+
+---
+
+#### **Week 8: Tes Akhir**
+```text
 
 minggu-0/
 ├── README.md                      # penjelasan minggu 0.                           
@@ -96,5 +106,37 @@ minggu-0/
     └── diagram-venv.png
 
 ```
+
+versi indo:
+
+
+### Rencana Lab Lengkap 
+
+* **Minggu 0:** Persiapan Lingkungan & Dasar-dasar Git.
+    * Tujuannya adalah agar siswa siap menulis kode.
+    
+* **Minggu 1:** Variabel & Masukan Pengguna.
+    * Fokus pada `string`, `int`, dan `float`, serta fungsi `input()`.
+    
+* **Minggu 2:** Typecasting & Perhitungan Dasar.
+    * Fokus pada penggunaan `int()`, `float()`, dan operator matematika untuk menyelesaikan masalah masukan.
+    
+* **Minggu 3:** Selection (`if`, `elif`, `else`).
+    * Fokus pada membuat program yang dapat membuat keputusan.
+    
+* **Minggu 4:** Iterasi (`for` dan `while` loops).
+    * Fokus pada mengotomatiskan tugas berulang.
+    
+* **Minggu 5:** Pemecahan Masalah.
+    * Minggu penyangga untuk melatih konsep yang sudah dipelajari.
+    
+* **Minggu 6:** Struktur Data (`list` dan `tuple`).
+    * Fokus pada mengelola koleksi data.
+    
+* **Minggu 7:** Fungsi & Prosedur.
+    * Fokus pada menulis kode yang dapat digunakan kembali.
+    
+* **Minggu 8:** Tes Akhir.
+    * Fokus pada menggunakan kode yg sudah dibuat di tugas selama ini.
 
 

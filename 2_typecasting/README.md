@@ -1,4 +1,11 @@
-### Minggu 2: Typecasting dan Perhitungan Dasar 📝
+---
+documentclass: article
+header-includes: |
+  \usepackage{fontspec}
+  \setmonofont{Ubuntu Mono}
+---
+
+### Minggu 2: Typecasting dan Perhitungan Dasar 
 
 Tujuan minggu ini adalah mengajarkan siswa cara melakukan perhitungan dengan data yang diterima dari pengguna.
 

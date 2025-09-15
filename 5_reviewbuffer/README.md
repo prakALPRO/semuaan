@@ -71,10 +71,50 @@ minggu-0/
 
 ### Soal
 
-* **Tugas:** 
-*  
-*  Artiin flowchart ke kode.
+* **Tugas5: TUG5_PengaplikasianTeknikElektro** 
+* Carilah satu rumus matematika yang ingin kamu aplikasikan ke dalam program kalkulatormu sendir. jelaskan apa saja variabelnya dan jelaskan isi programmu dengan flowchart dan pseudocode. taro di github repo class kita.
 
 
-* **Materi:** 
-* FizzBuzz
+# Materi 5: MAT5_KalkulatorRangkaianResistor 🔌
+konsep dasar:
+ **input**, **perulangan**, **kondisional**, dan **perhitungan sekuensial** untuk memecahkan masalah Teknik Elektro praktis.
+
+### Kalkulator Rangkaian Resistor 🔌**
+
+Anda diminta untuk membuat sebuah program yang dapat menghitung total resistansi dari sebuah rangkaian listrik murni. Program ini harus bisa menghitung dua jenis rangkaian: seri dan paralel.
+
+**Penjelasan Materi 5:**
+
+1.  Buat program yang bisa menerima input dari pengguna tentang jenis rangkaian (`seri` atau `paralel`).
+2.  Minta pengguna untuk memasukkan jumlah resistor yang ada di rangkaian tersebut.
+3.  Kemudian, minta pengguna untuk memasukkan nilai resistansi dari setiap resistor satu per satu.
+4.  Setelah semua nilai dimasukkan, hitung total resistansi menggunakan logika yang benar.
+5.  Cetak hasil akhirnya ke layar dengan format yang jelas.
+
+---
+
+### **Logika dan Rumus**
+
+* **Rangkaian Seri:** Total resistansi adalah jumlah dari semua nilai resistansi.
+    $R_{total} = R_1 + R_2 + ... + R_n$
+    
+* **Rangkaian Paralel:** Total resistansi adalah kebalikan dari jumlah kebalikan setiap nilai resistansi.
+    $1/R_{total} = 1/R_1 + 1/R_2 + ... + 1/R_n$
+
+---
+
+### **Contoh Alur Program**
+
+**Skenario Rangkaian Seri:**
+* **Input 1:** "seri"
+* **Input 2:** "3" (untuk 3 resistor)
+* **Input 3:** "10", "20", "30"
+* **Output:** "Total resistansi seri adalah: 60 ohm"
+
+**Skenario Rangkaian Paralel:**
+* **Input 1:** "paralel"
+* **Input 2:** "2" (untuk 2 resistor)
+* **Input 3:** "10", "10"
+* **Output:** "Total resistansi paralel adalah: 5.0 ohm"
+
+**Catatan:** Pastikan program Anda bisa menangani input yang tidak valid, misalnya jika pengguna memasukkan jenis rangkaian yang tidak dikenali atau input yang bukan angka.

@@ -78,5 +78,4 @@ minggu-0/
 
 
 * **Materi:** 
-* Debugging logical error. Berikan skrip dengan logika yg salah tapi programnya bisa jalan.
-* Soal cerita mirip logika kombinasional hahahaha.
+* PARAMETRIZED EQUATION YG PAK ANDRI!!!!!!!!!!!!!!!!

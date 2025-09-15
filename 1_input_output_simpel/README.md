@@ -42,7 +42,7 @@ minggu-0/
    
    * **Mengapa:** Jelaskan bahwa setiap informasi punya jenisnya sendiri (teks, angka, True/False) dan program perlu tahu perbedaannya.  
    
-   * **Bagaimana:** Perkenalkan variabel sebagai "kotak berlabel" untuk menyimpan data. Ajarkan cara mendeklarasikan variabel untuk tiga tipe data utama: string (teks), integer (bilangan bulat), dan float (bilangan desimal). tapi python aslinya gaperlu dideklarasi ???  
+   * **Bagaimana:** Perkenalkan variabel sebagai "kotak berlabel" untuk menyimpan data. Ajarkan cara mendeklarasikan variabel untuk tiga tipe data utama: string (teks), integer (bilangan bulat), dan float (bilangan desimal).  
    
    * **Live Coding:** Tunjukkan cara membuat dan mencetak variabel dari setiap tipe.  
 
@@ -81,10 +81,33 @@ minggu-0/
 
 ---
 
-### Soal
+### Overview Soal
 
 * **Tugas:** 
 * Buat program yang meminta nama depan, nama belakang, dan tahun lahir pengguna. Kemudian, cetak kalimat yang menyapa mereka dan tampilkan data yang mereka masukkan. minta mereka kasih comment.  
 * Buat Program kalkulasi matematika simpel?
 
 * **Materi:** Debugging kode. analisa program. intinya nguji mereka bisa baca & ngedebug kode simpel ga.
+
+---
+# Pre-Test 1:
+
+
+
+
+
+# Materi 1: MAT1_NavigasiRobot 🔌
+```
+~/ruang_praktikum/ALPRO/semuaan/1_input_output_simpel$ python3 -m JAWABAN_SOALKU.M1_navigasirobot
+```
+
+
+# Tugas1: 
+
+
+
+---
+# USED RESOURCES
+
+
+

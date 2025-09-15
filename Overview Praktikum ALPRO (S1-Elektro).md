@@ -2,18 +2,17 @@
 
 overview tanggal:
 
-| S | S | R | K | J | S | M | keterangan
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| . | . | . | **18** | **19**| . | . | M1: **Sequence & Tipe Data**  |
-| . | . | . | **25**| **26**| . | . |M2: **Sequence & Typecasting** |
-| . | . | . | **2**| **3**| . | . | M3: **Selection & Nested if** |
-| . | . | . | **9**| **10**| . | . | M4: **Iteration (Looping)**|
-| UTS | UTS | UTS | UTS| UTS| . | . | uts |
-| . | . | . | **23**| **24**| . | . |M5: (buffer setelah UTS) **sequence, selection, iteration**|
-| . | . | . | **30**| **31**| . | . | M6: **List**|
-| . | . | . | **6**| **7**| . | . | M7: **Function & Procedure**|
-| . | . | . | **13**| **14**| . | . | TA: ??? |
-
+| Kelas Pak Gun (Kamis) | Tanggal Praktikum (Jumat) | Materi Praktikum |
+| :---: | :---: | :--- |
+| **18 Sept** | **19 Sept** | M1: **Sequence & Tipe Data** |
+| **25 Sept** | **26 Sept** | M2: **Sequence & Typecasting** |
+| **2 Okt** | **3 Okt** | M3: **Selection & Nested if** |
+| **9 Okt** | **10 Okt** | M4: **Iteration (Looping)** |
+| **UTS** | **UTS** | UTS |
+| **23 Okt** | **24 Okt** | M5: **(buffer setelah UTS) sequence, selection, iteration**|
+| **30 Okt** | **31 Okt** | M6: **List** |
+| **6 Nov** | **7 Nov** | M7: **Function & Procedure** |
+| **13 Nov** | **14 Nov** | TA: ??? |
 
 
 

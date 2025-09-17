@@ -9,7 +9,10 @@ TITIK_B = (200, 200)
 # Format: (x, y, radius_tabrakan)
 LIST_RINTANGAN = [
     (100, 50, 10),
-    (150, 150, 15)
+    (150, 150, 15),
+    (0,45, 15),
+    (-46, 47, 48),
+    (100,0,33)
 ]
 
 class Robot:
@@ -20,6 +23,7 @@ class Robot:
         self.turtle.speed(1)
         self.turtle.penup()
         self.turtle.goto(TITIK_A)
+        self.turtle.setheading(100)
         self.turtle.pendown()
         self.koordinat_jejak = [TITIK_A]
         
@@ -58,6 +62,7 @@ class Robot:
         
     def restart(self):
         self.turtle.reset()  # Mereset turtle ke posisi dan kondisi default
+        self.turtle.setheading(100)
         self.koordinat_jejak = [self.turtle.pos()]
         self.gambar_rintangan() # Gambar rintangan lagi setelah direset
         self.gambar_tujuan()   # Gambar tujuan lagi

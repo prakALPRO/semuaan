@@ -9,10 +9,10 @@ Tanggal: 15 September 2025
 
 """
 
-
+import turtle
 
 # Import class Robot dari file asset lab
-from README_assets.assetlab_pert1_M1_navigasirobot import Robot
+from file_pendukung.assetlab_T1_navigasirobot_wrapper import Robot
 
 # Inisialisasi robot
 namarobotmu = Robot()
@@ -22,7 +22,7 @@ namarobotmu = Robot()
 # ==================================
 # Contoh:
 namarobotmu.maju(100)
-namarobotmu.putar_kanan(90)
+namarobotmu.putar_kanan(-90)
 # namarobotmu.maju(100)
 # ...
 
@@ -32,4 +32,4 @@ namarobotmu.putar_kanan(90)
 
 # JANGAN HAPUS BARIS INI
 # Ini agar jendela Turtle tetap terbuka setelah tes selesai
-namarobotmu.tunggu()
+turtle.exitonclick()

@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Temporary files
+*~
+
+# other
+TCC_soal2/

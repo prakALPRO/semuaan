@@ -32,6 +32,44 @@ minggu-0/
 │            
 └─── TUGAS/                   
     └── T0_test_hello_world.py     # Lembar Tugas minggu 0. boleh kerjain di sini.
+
+
+
+.
+├── file_pendukung
+│   ├── assetlab_T1_interactivemode.py
+│   ├── assetlab_T1_navigasirobot_wrapper.py
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── assetlab_M1_navigasirobot_wrapper.cpython-38.pyc
+│   │   ├── assetlab_T1_navigasirobot_wrapper.cpython-38.pyc
+│   │   └── __init__.cpython-38.pyc
+│   ├── ss_T1_blomberhasil_unittestgagal.png
+│   ├── ss_T1_interactivemode_awal.png
+│   └── ss_T1_nyobainteractivemode.png
+├── jawaban_akhir
+│   ├── __init__.py
+│   ├── jawabanmu_T1_navigasirobot.py
+│   └── __pycache__
+│       ├── __init__.cpython-38.pyc
+│       └── jawabanmu_T1_navigasirobot.cpython-38.pyc
+├── koleksi_jawaban_bagus
+├── materi_belajar
+│   └── README.md
+├── penguji_otomatis
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-38.pyc
+│   │   └── test_T1_goalachieved.cpython-38.pyc
+│   └── test_T1_goalachieved.py
+├── README.md
+└── soal_latihan
+    ├── kuncijawaban_prakALPRO_pert1_basic_sequence.md
+    └── soal_prakALPRO_pert1_basic_sequence.md
+
+
+
+
 ```
 
 ---

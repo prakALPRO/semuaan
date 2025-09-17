@@ -19,8 +19,7 @@ overview tanggal:
 overview praktikum (bisa diubah):
 
 
-# M1: **Sequence & Tipe Data** 
-
+# M1: **Basic Sequence ** 
 
 # M2: **Sequence & Typecasting**
 

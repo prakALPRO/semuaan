@@ -1,100 +1,94 @@
 # Minggu 1: Basic Sequence 📝
 
-Tujuan minggu ini adalah menggunakan konsep *Sequence* untuk melakukan perhitungan dan memahami cara menjalankan program python.  
+Pertemuan ini memandu mahasiswa dari persiapan *environment* hingga mampu menulis skrip sekuensial sederhana yang terdokumentasi dengan baik.
 
+## **Panduan Repository & Alur Kerja 🚀**
 
+Selamat datang di repository praktikum\! Agar tidak bingung, semua folder telah disusun berdasarkan alur pengerjaan yang logis. Ikuti panduan ini untuk menavigasi folder dengan mudah.
 
-Isi repository ini adalah:
-  * **`materi_belajar/`**: Folder buku praktikum minggu ini.
-  * **`file_pendukung/`**: Folder skrip python tutor live coding, gambar, dan hal-hal lain.
-  * **`jawaban_akhir/`**: Folder menaruh jawaban tugas.
-  * **`soal_latihan/`**: Folder liat soal.
- * **`penguji_otomatis/`**: Tempat **unit tests** (`.py`) yang bisa kamu jalankan untuk cek jawaban tugas. Dengan ini, kamu bisa langsung memeriksa jawabanmu sebelum penilaian manual.
+-----
 
+### **Isi Setiap Folder**
+
+Berikut adalah penjelasan setiap folder sesuai urutan pengerjaannya:
+
+  * **`materi_belajar/`**: **Mulai dari Sini.** Folder ini berisi buku panduan utama yang menjelaskan konsep-konsep penting untuk praktikum minggu ini.
+  * **`soal_latihan/`**: **Baca Soalnya.** Setelah paham materi, lihat detail soal dan tugas yang harus dikerjakan di dalam folder ini.
+  * **`jawaban_akhir/`**: **Tulis Jawabanmu.** Tempat kamu menulis dan menyimpan semua file jawaban, baik untuk soal materi (M1) maupun tugas (T1).
+  * **`penguji_otomatis/`**: **Uji Jawabanmu.** Gunakan skrip *unit test* di sini untuk memeriksa apakah kodemu sudah benar secara otomatis sebelum dikumpulkan.
+  * **`file_pendukung/`**: **Gunakan Bantuan.** Berisi file-file pendukung seperti skrip visualizer untuk membantumu mengerjakan dan memahami tugas.
+
+-----
+
+### **Peta Folder & File Penting**
+
+Struktur ini menunjukkan di mana kamu bisa menemukan file-file penting:
 
 ```
-
-
+.
+├── materi_belajar
+│   └── Panduan_ALPRO_pert1.md                # 1. Baca panduan praktikum di sini
+│
+├── soal_latihan
+│   └── soal_prakALPRO_pert1_basic_sequence.md  # 2. Baca detail soalnya di sini
+│
+├── jawaban_akhir
+│   ├── ... (buat file jawaban M1 di sini)    # 3a. Tulis jawaban Materi (M1) di sini
+│   └── jawabanmu_T1_navigasirobot.py         # 3b. Tulis jawaban Tugas (T1) di sini
+│
+├── penguji_otomatis
+│   └── test_T1_goalachieved.py               # 4. Uji jawaban T1 dengan skrip ini
+│
+├── file_pendukung
+│   └── assetlab_T1_interactivemode.py        # 5. Lihat visualisasi T1 dengan skrip ini
+│
+└── ... (file dan folder lainnya)
 ```
 
 ---
 
-### Konsep Utama & Kegiatan Lab
+## **Ringkasan Rencana Praktikum **
 
-### 0. Pengenalan Git dan GitHub
-* **Tujuan:** Memahami fungsi **Git** dan **GitHub** sebagai alat untuk *version control* dan kolaborasi dalam tim *programming*.
-* **Materi:**
-    * Git: Perkenalkan Git sebagai *tool* untuk melacak perubahan pada kode (disebut **version control**).
-    * GitHub: Jelaskan GitHub sebagai platform untuk menyimpan *repository* kode secara *online* dan memfasilitasi kolaborasi.
-    * Alur Kerja Dasar: Fokus pada dua perintah penting: `git pull` (mengambil *template* repo) dan `git push` (mengirim tugas yang sudah dikerjakan).
-* **Praktik:** Tunjukkan proses langsung mulai dari membuat akun, menginstal Git, hingga menjalankan `git pull` dan `git push` pada contoh *repository* sederhana.
----
-### 1. Variabel dan Tipe Data
-* **Tujuan:** Memahami konsep dasar **variabel** dan **tipe data** dalam pemrograman.
-* **Materi:**
-    * Variabel: Jelaskan variabel sebagai wadah untuk menyimpan data, layaknya "kotak berlabel" yang bisa diisi dan diganti isinya.
-    * Tipe Data: Kenalkan tiga tipe data utama: **string** (untuk teks), **integer** (untuk bilangan bulat), dan **float** (untuk bilangan desimal). Jelaskan bahwa setiap data memiliki "jenisnya" sendiri.
-* **Praktik:** Lakukan *live coding* untuk membuat, mengisi, dan mencetak nilai dari variabel untuk setiap tipe data.
----
-### 2. Interaksi Pengguna: Fungsi `input()`
-* **Tujuan:** Membuat program yang bisa berinteraksi dengan pengguna.
-* **Materi:**
-    * Fungsi `input()`: Ajarkan cara menggunakan fungsi `input()` untuk menerima data dari pengguna.
-    * Perhatian Penting: Jelaskan bahwa `input()` akan **selalu mengembalikan string**. Ini adalah poin krusial yang harus mereka pahami.
-* **Praktik:** Buat program interaktif sederhana, seperti meminta nama atau usia, lalu mencetaknya. Tunjukkan bagaimana data dari `input()` harus diubah (*type casting*) menjadi *integer* atau *float* jika ingin digunakan untuk perhitungan.
----
-### 3. Komentar dalam Kode
-* **Tujuan:** Memahami pentingnya **komentar** untuk membuat kode lebih jelas dan mudah dibaca oleh manusia.
-* **Materi:**
-    * Fungsi Komentar: Jelaskan bahwa komentar adalah catatan yang diabaikan oleh program, tapi sangat penting untuk dokumentasi dan kolaborasi.
-    * Cara Menulis Komentar: Tunjukkan cara membuat komentar satu baris (`#`) dan komentar multi-baris (`"""..."""` atau *docstrings*).
-* **Praktik:** Berikan contoh kode yang rumit lalu tambahkan komentar untuk setiap baris atau blok kode. Bandingkan versi dengan dan tanpa komentar untuk menyoroti perbedaannya.
+Praktikum ini dirancang untuk membekalimu dengan pondasi pemrograman Python dari nol, dengan alur sebagai berikut:
 
-### Cheatsheet
+* **Langkah 0: Persiapan Lingkungan Kerja**
+    Mahasiswa akan menginstal *software* esensial (VS Code, Python, Git) dan mempelajari alur kerja dasar Git/GitHub (`pull`/`push`) untuk manajemen dan pengumpulan tugas.
 
-**Tipe Data Utama:**
+* **Langkah 1: Konsep Variabel & Tipe Data**
+    Mengenalkan konsep fundamental **variabel** sebagai "wadah" penyimpan data dan tiga tipe data utama: **string** (teks), **integer** (bilangan bulat), dan **float** (bilangan desimal).
 
-* `str` (string): 'teks'
-* `int` (integer): 100
-* `float` (float): 3.14
+* **Langkah 2: Operasi Dasar dengan Operator Aritmetika**
+    Mahasiswa akan belajar cara melakukan kalkulasi matematika dasar (`+`, `-`, `*`, `/`, `%`, `**`) pada variabel-variabel yang telah mereka buat.
 
-**Sintaks Python Dasar:**
+* **Langkah 3: Dokumentasi Kode dengan Komentar**
+    Mempelajari fungsi dan cara penulisan **komentar** (`#`) untuk membuat kode yang mereka tulis menjadi lebih jelas dan mudah dibaca oleh manusia.
 
-* `input("tulisannn:")`
-* `print(nilai)`
-(expand on this)
-* comments syntax
+* **Langkah 4: Mengerjakan Materi M1 dan Tugas T1**
 
-
----
-
-### Overview Soal
-
-* **Tugas:** 
-* Buat program yang meminta nama depan, nama belakang, dan tahun lahir pengguna. Kemudian, cetak kalimat yang menyapa mereka dan tampilkan data yang mereka masukkan. minta mereka kasih comment.  
-* Buat Program kalkulasi matematika simpel?
-
-* **Materi:** Debugging kode. analisa program. intinya nguji mereka bisa baca & ngedebug kode simpel ga.
-
----
-# Pre-Test 1:
+-----
 
 
 
+## ===== MATERI M1 ================================================  
+
+### **1: Kalkulator Konversi Derajat ke Radian**
+![ss soal](file_pendukung/foto/ss_M1_1.png)  
 
 
-# Materi 1: MAT1_NavigasiRobot 🔌
-```
-~/ruang_praktikum/ALPRO/semuaan/1_input_output_simpel$ python3 -m JAWABAN_SOALKU.M1_navigasirobot
-```
-
-
-# Tugas1: 
+### **2: Kalkulator Torsi**
+![ss soal](file_pendukung/foto/ss_M1_2.png)  
 
 
 
----
-# USED RESOURCES
+### **3: Kalkulator Gaya Coulomb**
+![ss soal](file_pendukung/foto/ss_M1_3.png)  
 
+
+## ===== TUGAS T1 ================================================  
+DEADLINE: Jumat, 26 September 23:59 WIB
+(kalau telat, gapapa, tetap dapat nilai, tapi kepotong 50%. tetap lebih baik telat daripada gak ngumpul. ) 
+
+### **1: Navigasi Robot**
+![ss soal](file_pendukung/foto/ss_T1_nyobainteractivemode.png)  
 
 

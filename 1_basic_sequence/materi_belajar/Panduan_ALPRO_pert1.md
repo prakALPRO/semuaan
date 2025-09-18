@@ -1,11 +1,11 @@
 SANGAT Terinspirasi dari buku:
 
 “Think-C” karya Thomas Scheffler terbitan  Green Tea Press   
-[](https://github.com/tscheffl/ThinkC/blob/master/PDF/Think-C.pdf)  
+[Think-C](https://github.com/tscheffl/ThinkC/blob/master/PDF/Think-C.pdf)  
 
 
 "Think Python" karya Allen Downey terbitan  Green Tea Press   
-[](https://greenteapress.com/thinkpython2/thinkpython2.pdf)  
+[Think Python 2nd Edition, Version 2.4.0 ](https://greenteapress.com/thinkpython2/thinkpython2.pdf)  
 
 -----
 
@@ -13,106 +13,75 @@ SANGAT Terinspirasi dari buku:
 
 ```
 1_basic_sequence/
-├── CONFIDENTIAL_MATERI/
-│   ├── M1_basic_sequence.md
-│   └── M1_basic_sequence.pdf
-│
-├── CONFIDENTIAL_PEMBAHASAN/
-│   ├── kunci_T1_kalkulator.md
-│   └── kunci_M1_basic_sequence.md
-│
-├── KONTEN_TUTOR/
-│   ├── tutor1_basic_sequence.md
-│   ├── tutor1_basic_sequence.pdf
-│   └── tes_awal1.pdf
-│
-├── README_assets/
-│   ├── git-flowchart.png
-│   └── diagram-venv.png
-│
-├── README.md
-│
-├── tests/
-│   └── test_T1_kalkulator.py
-│
-└── TUGAS/
-    └── T1_kalkulator.py
+├── file_pendukung
+│   ├── assetlab_T1_interactivemode.py
+│   ├── assetlab_T1_navigasirobot_wrapper.py
+│   ├── foto
+│   │   ├── ss_M1_1.png
+│   │   ├── ss_M1_2.png
+│   │   ├── ss_M1_3.png
+│   │   ├── ss_T1_blomberhasil_unittestgagal.png
+│   │   ├── ss_T1_interactivemode_awal.png
+│   │   └── ss_T1_nyobainteractivemode.png
+│   └── __init__.py
+├── InstruksiUntuk1BasicSequence.md
+├── jawaban_akhir
+│   ├── __init__.py
+│   └── jawabanmu_T1_navigasirobot.py
+├── koleksi_jawaban_bagus
+├── materi_belajar
+│   ├── Panduan_ALPRO_pert1.md
+│   └── README.md -> Panduan_ALPRO_pert1.md
+├── penguji_otomatis
+│   ├── __init__.py
+│   └── test_T1_goalachieved.py
+├── README.md -> InstruksiUntuk1BasicSequence.md
+└── soal_latihan
+    ├── KUNCI_prakALPRO_pert1_basic_sequence.md
+    └── soal_prakALPRO_pert1_basic_sequence.md
+
 ```
 
-## **Overview Konsep Utama & Kegiatan Lab**
 
-### **0. Menyiapkan Lingkungan Pemrograman 💻**
-
-* **Tujuan:** Mengenal dan menyiapkan *software* esensial yang membentuk **lingkungan pemrograman (coding environment)**, serta memahami fungsi **Git** dan **GitHub** sebagai alat untuk manajemen kode dan kolaborasi.
-
-* **Materi:**
-  
-  * **Komponen Utama Lingkungan Pemrograman:**
-    
-    1. **Text Editor / IDE (Integrated Development Environment):** Ini adalah tempat kita menulis kode. Untuk memulai, kita akan menggunakan **Visual Studio Code (VS Code)**. VS Code adalah *editor* modern yang dilengkapi fitur-fitur canggih seperti *syntax highlighting* (memberi warna pada kode agar mudah dibaca), *code completion* (saran kode otomatis), dan terminal terintegrasi. 
-    2. **Python Interpreter:** Ini adalah "penerjemah" yang membaca kode Python-mu dan memberitahu komputer cara menjalankannya. Tanpa ini, komputermu tidak akan mengerti file `.py` yang kamu tulis.
-    3. **Terminal (Command Line):** Ini adalah antarmuka berbasis teks untuk berinteraksi langsung dengan komputermu. Kita akan menggunakannya untuk menjalankan perintah-perintah penting seperti menginstal *library* atau menggunakan Git.
-  
-  * **Manajemen Kode dengan Git & GitHub:**
-    
-    * **Git:** Anggap saja Git sebagai "mesin waktu" untuk kodemu yang ada di komputermu. Ia melacak setiap perubahan yang kamu buat, jadi kamu bisa kembali ke versi sebelumnya jika terjadi kesalahan. Proses ini disebut ***version control***.
-    * **GitHub:** Ini adalah platform *online* untuk menyimpan *repository* (folder proyek) Git-mu. Anggap saja GitHub sebagai "Google Drive" untuk kode, yang memungkinkanmu menyimpan kodemu dengan aman dan berkolaborasi dengan orang lain.
-    * **Alur Kerja Dasar:** Untuk praktikum ini, kita akan fokus pada dua perintah: `git pull` untuk mengambil *template* soal dari *repository* dan `git push` untuk mengirimkan jawabanmu.
-
-* **Praktik:**
-  
-  1. **Instalasi:** Tunjukkan proses instalasi **Python**, **VS Code**, dan **Git** di komputer.
-  2. **Konfigurasi Awal:** Lakukan konfigurasi dasar Git di terminal dengan mengatur *username* dan *email*.
-  3. **Demonstrasi Alur Kerja:** Tunjukkan proses lengkap mulai dari `git pull` untuk mengunduh folder materi, membuka folder tersebut di VS Code, melakukan sedikit perubahan pada kode, lalu menggunakan `git push` untuk mengunggah hasilnya kembali ke GitHub.
-
----
-
-### 1. Variabel dan Tipe Data
-
-* **Tujuan:** Memahami konsep dasar **variabel** dan **tipe data** dalam pemrograman.
-* **Materi:**
-  * **Variabel:** Jelaskan variabel sebagai wadah untuk menyimpan data, layaknya "kotak berlabel" yang bisa diisi dan diganti isinya. 
-  * **Tipe Data:** Kenalkan tiga tipe data utama: **string** (untuk teks), **integer** (untuk bilangan bulat), dan **float** (untuk bilangan desimal). Jelaskan bahwa setiap data memiliki "jenisnya" sendiri.
-* **Praktik:** Lakukan *live coding* untuk membuat, mengisi, dan mencetak nilai dari variabel untuk setiap tipe data.
-
----
-
-### 2. Operator Aritmetika
-
-* **Tujuan:** Memahami cara menggunakan operator matematika untuk memanipulasi dan memproses data numerik yang tersimpan dalam variabel.
-* **Materi:**
-  * **Ekspresi:** Jelaskan bahwa kombinasi antara nilai, variabel, dan operator yang menghasilkan sebuah nilai baru disebut sebagai **ekspresi** (contoh: `harga_barang * jumlah`).
-  * **Operator Aritmetika:** Kenalkan operator dasar: `+` (tambah), `-` (kurang), `*` (kali), `/` (bagi), `%` (sisa bagi/modulo), dan `**` (pangkat).
-* **Praktik:** Lakukan *live coding*. Definisikan beberapa variabel (misal: `panjang = 10`, `lebar = 5`). Kemudian, buat ekspresi untuk menghitung luas dan keliling (`luas = panjang * lebar`), simpan hasilnya di variabel baru, lalu cetak hasilnya dengan teks yang jelas.
-
----
-
-### 3. Komentar dalam Kode
-
-* **Tujuan:** Memahami pentingnya **komentar** untuk membuat kode lebih jelas dan mudah dibaca oleh manusia.
-* **Materi:**
-  * **Fungsi Komentar:** Jelaskan bahwa komentar adalah catatan yang diabaikan oleh program, tapi sangat penting untuk dokumentasi dan kolaborasi.
-  * **Cara Menulis Komentar:** Tunjukkan cara membuat komentar satu baris (`#`).
-* **Praktik:** Berikan contoh kode lalu tambahkan komentar untuk setiap baris atau blok kode. Bandingkan versi dengan dan tanpa komentar untuk menyoroti perbedaannya.
-
------
 
 ## ============== **Cheatsheet** ======================
 
-| Kategori          | Sintaks            | Contoh                           | Penjelasan                                      |
-|:----------------- |:------------------ |:-------------------------------- |:----------------------------------------------- |
-| **Tipe Data**     | `str`              | `"Halo"`                         | Teks atau kumpulan karakter.                    |
-|                   | `int`              | `100`                            | Bilangan bulat.                                 |
-|                   | `float`            | `3.14`                           | Bilangan desimal.                               |
-| **Sintaks Dasar** | `print()`          | `print("Hello")`                 | Menampilkan output ke terminal.                 |
-|                   | `input()`          | `nama = input("Siapa namamu? ")` | Menerima input dari user (selalu `string`).     |
-| **Type Casting**  | `int()`            | `angka = int("25")`              | Mengubah nilai menjadi `integer`.               |
-|                   | `float()`          | `desimal = float("99.5")`        | Mengubah nilai menjadi `float`.                 |
-| **Komentar**      | `#`                | `# Ini tidak akan dieksekusi`    | Membuat komentar satu baris.                    |
-| **Operator**      | `+`, `-`, `*`, `/` | `5 + 2`                          | Penjumlahan, Pengurangan, Perkalian, Pembagian. |
-|                   | `%`                | `10 % 3`                         | Sisa Hasil Bagi (Modulo), hasilnya `1`.         |
-|                   | `**`               | `2 ** 3`                         | Perpangkatan, hasilnya `8`.                     |
 
+#### **Tipe Data Dasar **
+
+| Sintaks | Contoh | Penjelasan |
+| :--- | :--- | :--- |
+| `str` | `"Halo"` | Teks atau kumpulan karakter. |
+| `int` | `100` | Bilangan bulat. |
+| `float` | `3.14` | Bilangan desimal (pecahan). |
+
+-----
+
+#### **Output Dasar **
+
+| Metode | Sintaks & Contoh | Catatan |
+| :--- | :--- | :--- |
+| **%-formatting (Old Style)** | `print("Nama: %s, Umur: %d" % (nama, umur))` | Dianggap kuno. Perlu penanda tipe data (`%s`, `%d`, `%f`). Kurang fleksibel. |
+| **Metode `.format()`** | `print("Nama: {}, Umur: {}".format(nama, umur))` | Fleksibel dan kuat. Lebih mudah dibaca daripada %-formatting. |
+| **F-String (Disarankan)** | `print(f"Nama: {nama}, Umur: {umur}")` | Paling modern, singkat, dan mudah dibaca. Bisa memasukkan ekspresi langsung (`{harga*jumlah}`). |
+
+
+#### **Komentar **
+
+| Sintaks | Contoh | Penjelasan |
+| :--- | :--- | :--- |
+| `#` | `x = 5 # Ini komentar inline` | **Komentar satu baris.** Mengabaikan sisa teks di baris itu. |
+| `""" ... """` | `"""Ini komentar` <br> `multi-baris."""` | **Komentar multi-baris.** Sering digunakan untuk komentar blok. |
+
+-----
+
+#### **Operator Aritmetika **
+
+| Sintaks | Contoh | Penjelasan |
+| :--- | :--- | :--- |
+| `+`, `-`, `*`, `/` | `5 + 2` | Penjumlahan, Pengurangan, Perkalian, Pembagian. |
+| `%` | `10 % 3` | **Sisa Hasil Bagi (Modulo),** hasilnya `1`. |
+| `**` | `2 ** 3` | **Perpangkatan,** hasilnya `8`. |
 -----
 
 -----
@@ -128,12 +97,11 @@ Salin kode ini dan lakukan eksperimen berikut:
 print("Hello, World.")
 ```
 
-a. Jalankan program. Apa outputnya?
-b. Tambahkan `print("Apakabssss ?")` di bawahnya. Jalankan lagi. Apa outputnya sekarang?
-c. Tambahkan komentar `# Ini eksperimenku`. Apakah outputnya berubah?
-d. Hapus salah satu tanda kutip, misalnya jadi `print("Hello, World.)`. Apa pesan error yang muncul?
-e. Salah ketik `print` menjadi `prnt`. Apa pesan error yang muncul?
-
+1.  Jalankan program. Apa outputnya?
+2.  Tambahkan `print("Apakabssss ?")` di bawahnya. Jalankan lagi. Apa outputnya sekarang?
+3.  Tambahkan komentar `# Ini eksperimenku`. Apakah outputnya berubah?
+4.  Hapus salah satu tanda kutip, misalnya jadi `print("Hello, World.)`. Apa pesan error yang muncul?
+5.  Salah ketik `print` menjadi `prnt`. Apa pesan error yang muncul?
 -----
 
 #### **Tutor 1.2: Men-debug Kode **
@@ -182,13 +150,13 @@ Bayangkan kamu punya sebuah "area eksperimen" atau "kalkulator super" di mana ka
 
 Ini adalah salah satu *tool* terbaik untuk belajar dan mencoba ide-ide kecil dengan cepat.
 
-#### **Bagaimana Cara Membukanya?**
+##### **Bagaimana Cara Membukanya?**
 
 1. Buka **Terminal** (bisa langsung di dalam VS Code).
 2. Ketik `python` (atau `python3` pada beberapa sistem) lalu tekan **Enter**.
 3. Kamu akan melihat prompt berubah menjadi `>>>`. Ini tandanya Python Shell sudah siap menerima perintahmu\!
 
-#### **Ayo Bermain\! Skenario: Toko Kue Ajaib**
+##### **Ayo Bermain\! Skenario: Toko Kue Ajaib**
 
 Ketik perintah di bawah ini satu per satu setelah `>>>` dan lihat apa yang terjadi setelah kamu menekan **Enter**.
 
@@ -242,7 +210,7 @@ Ketik perintah di bawah ini satu per satu setelah `>>>` dan lihat apa yang terja
    Lho, kok hasilnya `'10050'` bukan `150`?
    **Inilah keajaiban shell\!** Kamu baru saja menemukan secara langsung bahwa operator `+` akan **menggabungkan** jika bertemu *string*, bukan menjumlahkan. Ini adalah pelajaran fundamental yang sangat mudah diuji di sini.
 
-#### **Kapan Sebaiknya Menggunakan Shell Ini?**
+##### **Kapan Sebaiknya Menggunakan Shell Ini?**
 
 * Saat kamu ingin **menguji ide kecil** atau satu baris kode dengan cepat.
 * Saat kamu **lupa sebuah sintaks** dan ingin mencobanya terlebih dahulu.
@@ -254,7 +222,7 @@ Tentu, ini draf untuk seksi 1.4 yang berisi instruksi pengerjaan soal berdasarka
 
 ---
 
-### **Tutor 1.4: Petunjuk Pengerjaan Soal 📝**
+#### **Tutor 1.4: Petunjuk Pengerjaan Soal 📝**
 
 *Wait!* Sebelum mulai, baca dulu panduan ini agar kamu tahu persis apa yang harus dilakukan untuk setiap jenis soal. Ada dua bagian utama: **Materi M1** dan **Tugas T1**. Cara mengerjakannya sedikit berbeda.
 
@@ -278,22 +246,51 @@ Soal-soal di bagian ini (Radian, Torsi, Gaya Coulomb) bertujuan untuk melatih lo
 4.  **Jalankan & Periksa:** Buka terminal, lalu jalankan file-mu dengan perintah `python nama_file.py`. Bandingkan output programmu dengan contoh yang ada di soal.
 
 ---
+Tentu, ini versi instruksi yang diperbaiki agar lebih jelas dan alurnya lebih baik.
 
-#### **Untuk Soal Tugas T1 (Navigasi Robot)**
+#### **Untuk Soal Tugas T1 (Navigasi Robot) 🤖**
 
-Soal ini berbeda! Kamu tidak membuat file baru, tetapi **mengisi kode** pada file yang sudah disediakan untuk menggerakkan sebuah robot.
+Soal ini berbeda! Kamu tidak membuat file baru, tetapi **mengisi kode** pada file yang sudah ada untuk menggerakkan sebuah robot.
 
-1.  **Buka File yang Tepat:** Cari dan buka file bernama `jawabanmu_M1_navigasirobot.py` yang ada di dalam folder `jawaban_akhir`.
+---
 
-2.  **Isi Fungsi:** Kamu akan melihat sebuah fungsi yang sudah disiapkan. Tuliskan logikamu **di dalam fungsi tersebut**.
+### **Perintah yang Tersedia 📜**
 
-3.  **Gunakan Perintah Gerakan:** Kamu hanya perlu menggunakan dua perintah yang sudah disediakan:
-    * `maju(langkah)`: Untuk bergerak lurus.
-    * `belok(derajat)`: Untuk berbelok. Gunakan angka positif (misal: `90`) untuk belok kanan dan angka negatif (misal: `-90`) untuk belok kiri.
+Gunakan perintah-perintah berikut di dalam kodemu untuk mengontrol pergerakan robot:
 
-4.  **Visualisasikan & Uji Jawabanmu:** Ini adalah langkah terpenting.
-    * **Untuk Melihat Robot Bergerak:** Jalankan file `assetlab_M1_navigasirobot_wrapper.py`. Ini akan membuka jendela simulasi yang menampilkan pergerakan robotmu secara visual.     * **Untuk Memastikan Jawaban Benar:** Jalankan file `test_M1_goalachieved.py` dari folder `penguji_otomatis`. Terminal akan memberimu pesan "OK" atau "FAILED". Jawabanmu dianggap benar jika tes ini berhasil.
+* `restart()`
+    * Mengembalikan robot ke posisi awal (0, 0) dan menghadap ke arah semula.
 
-5.  **Kumpulkan Jawaban:** Setelah pengujian otomatis berhasil, simpan file `jawabanmu_M1_navigasirobot.py` dan kumpulkan tugasmu menggunakan `git push`.
+* `maju(pixel)`
+    * Membuat robot bergerak maju lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `maju(123)`.
+
+* `mundur(pixel)`
+    * Membuat robot bergerak mundur lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `mundur(9)`.
+
+* `putar_kanan(derajat)`
+    * Membuat robot berputar di tempat ke **kanan** sebesar `derajat`. Contoh: `putar_kanan(-120)`.
+
+* `putar_kiri(derajat)`
+    * Membuat robot berputar di tempat ke **kiri** sebesar `derajat`. Contoh: `putar_kiri(90)`.
+
+---
+
+### **Langkah Pengerjaan ✍️**
+
+1.  **Buka File Jawaban:**
+    Cari dan buka file bernama `jawabanmu_M1_navigasirobot.py` yang ada di dalam folder `jawaban_akhir`.
+
+2.  **Isi Logika di Dalam Fungsi:**
+    Kamu akan melihat sebuah fungsi yang sudah disiapkan. Tuliskan urutan perintahmu **di dalam fungsi tersebut**.
+
+3.  **Visualisasikan & Uji Jawabanmu:**
+    Ini adalah langkah terpenting untuk memastikan solusimu benar.
+    
+    * **Untuk Mencoba Hasil Jawabanmu:** Jalankan file `jawabanmu_M1_navigasirobot.py` yang ada di dalam folder `jawaban_akhir`. Klik jendela simulasinya nya kalau mau kamu tutup.
+    * **Untuk Mencoba Robot Secara Interaktif:** Jalankan file `assetlab_T1_interactivemode.py` yang ada di folder `file_pendukung`. Sebuah jendela simulasi akan muncul dan menampilkan pergerakan robotmu secara visual. Ketik perintahmu sebaris sebaris di terminal.
+    * **Untuk Memastikan Jawaban Benar:** Jalankan file `test_M1_goalachieved.py` yang ada di folder `penguji_otomatis`. Terminal akan memberimu pesan **"OK"** jika berhasil atau **"FAILED"** jika gagal.
+
+4.  **Kumpulkan Jawaban:**
+    Setelah pengujian otomatis menunjukkan **"OK"**, simpan file jawabanmu dan kumpulkan tugasmu menggunakan `git push`.
 
 Jika ada kesulitan, jangan ragu untuk bertanya. Selamat mengerjakan!

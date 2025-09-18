@@ -39,6 +39,13 @@ minggu-0/
 
 ### Konsep Utama & Kegiatan Lab
 
+### 2. Interaksi Pengguna: Fungsi `input()`
+* **Tujuan:** Membuat program yang bisa berinteraksi dengan pengguna.
+* **Materi:**
+    * Fungsi `input()`: Ajarkan cara menggunakan fungsi `input()` untuk menerima data dari pengguna.
+    * Perhatian Penting: Jelaskan bahwa `input()` akan **selalu mengembalikan string**. Ini adalah poin krusial yang harus mereka pahami.
+* **Praktik:** Buat program interaktif sederhana, seperti meminta nama atau usia, lalu mencetaknya. Tunjukkan bagaimana data dari `input()` harus diubah (*type casting*) menjadi *integer* atau *float* jika ingin digunakan untuk perhitungan.
+
 1. **Typecasting sebagai Solusi**  
    
    * **Mengapa:** Ingatkan siswa tentang masalah di mana input() selalu mengembalikan string. Perlihatkan lagi bagaimana Python akan menggabungkan teks ("5" + "5" = "55") daripada menjumlahkan angka. Typecasting adalah solusi untuk mengubah data dari satu jenis ke jenis lain.  

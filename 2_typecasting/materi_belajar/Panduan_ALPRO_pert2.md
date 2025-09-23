@@ -69,7 +69,7 @@ Tabel ini menunjukkan fungsi-fungsi dasar untuk mengubah satu tipe data ke tipe 
 
 ### **EKSPLORASI LIVE CODING**
 
-#### **Tutor 1.1: Utak-atik Kode**
+#### **Tutor 2.1: Utak-atik Kode**
 
 Salin kode ini dan lakukan eksperimen berikut:
 
@@ -86,7 +86,7 @@ print(f"Halo, {nama_pengguna}! Senang bertemu denganmu.")
 5.  Salah ketik `input()` menjadi `Input()`. Apa pesan error yang muncul?
 -----
 
-#### **Tutor 1.2: kenapa perlu typecasting **
+#### **Tutor 2.2: kenapa perlu typecasting **
 
 Program di bawah ini penuh dengan *bug*. Di versi ini, tanggalnya sudah ditentukan di dalam variabel, jadi kamu hanya perlu fokus memperbaiki **kesalahan sintaks** agar program bisa berjalan dan menghasilkan output yang benar.
 
@@ -107,7 +107,7 @@ print(f"Wah, berarti kamu lahir sekitar tahun {tahun_lahir}.")
 
 -----
 
-#### **Tutor 1.3: Mengupgrade salah satu kalkulator M1 **
+#### **Tutor 2.3: Mengupgrade salah satu kalkulator M1 **
 
 kita akan coba salah satu kalkulator yg lalu~
 ![kita pilih satu buat contoh ](file_pendukung/foto/wheelofnames_tutorinM1ygmana.png)  
@@ -125,26 +125,22 @@ kita akan coba salah satu kalkulator yg lalu~
 
 ---
 
-#### **Tutor 1.4: Petunjuk Pengerjaan Soal 📝**
+#### **Tutor 2.4: Petunjuk Pengerjaan Soal 📝**
 
 Kali ini, hanya ada soal **Materi M2**. gaada tugas yeyyyy! 
 
-**Instruksi Umum:** Buka kembali file-file jawaban Anda dari **Materi M1** YANG BELUM KITA UBAH MENJADI INTERAKTIF. Untuk setiap soal buatlah salinan file tersebut (misalnya `M1_1_radian.py` menjadi `M2_1_radian_interaktif.py`), lalu modifikasi salinan tersebut sesuai petunjuk.
+**Instruksi Umum:** Buka kembali file-file jawaban Anda dari **Materi M1** YANG BELUM KITA UBAH MENJADI INTERAKTIF. Untuk setiap kalkulator, copy isi file tersebut (misalnya `M1_1_radian.py` ke `M2_1_radian_interaktif.py`), lalu modifikasi seperti di tutor 2.3 .
 
 #### **1: Kalkulator Konversi Derajat ke Radian (Interaktif)**
-
-  * **Goal**: Mengubah skrip kalkulator radian statis menjadi program interaktif yang menanyakan pengguna sudut berapa yang ingin dikonversi.
-  * **Petunjuk Pengerjaan**:
-    1.  Cari baris kode di mana Anda mendefinisikan `sudut_derajat` secara manual (misal: `sudut_derajat = 45`).
-    2.  Gantilah baris tersebut. Gunakan `float(input(...))` untuk meminta pengguna memasukkan nilai sudut.
-    3.  Pastikan sisa dari program menggunakan variabel hasil input tersebut untuk kalkulasi.
   * **Contoh Tampilan Program**:
+  
     ```
     Masukkan sudut dalam derajat: 30
 
     === Hasil Konversi ===
     Sudut dalam derajat: 30.0
-    Sudut dalam radian= 0.524 rad
+    
+    Sudut dalam radian = 0.524 rad
     Sudut dalam pi radian= 0.16666666666666666 pi rad
     ```
 

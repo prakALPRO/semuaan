@@ -1,3 +1,8 @@
+---
+header-includes: |
+  \usepackage{fontspec}
+  \setmonofont{Ubuntu Mono}
+---
 # Praktikum ALPRO (S1-Elektro)
 
 overview tanggal:
@@ -21,6 +26,7 @@ overview praktikum (bisa diubah):
 
 # M1: **Basic Sequence ** 
 
+
 # M2: **Sequence & Typecasting**
 
 # M3: **Selection & Nested if**
@@ -37,21 +43,6 @@ overview praktikum (bisa diubah):
 
 # TA: ???
 
-
-
-# rekues 
-
-## pluspoints/cara lain mendapat nilai:
-
-
-
-## +10 nilai akhir
-
-kalau berhasil menyelesaikan **semua** w3school python tutorial **dari intro sampai arrays**  sebelum pertemuan TA . dibuktikan dengan menunjukkan akun w3school & ke aslab. klo ga selesai, ya gadapet.
-
-(https://www.w3schools.com/python/python_arrays.asp)
-
-[Python Arrays](https://www.w3schools.com/python/python_arrays.asp) 
 
 
 

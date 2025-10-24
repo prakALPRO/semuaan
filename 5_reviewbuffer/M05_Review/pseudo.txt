@@ -1,0 +1,109 @@
+klo mo nyoba salah satu cara yg simpel
+
+// --- 1. INISIALISASI VARIABEL STATE ---
+// Tentukan "memori" kasir sebelum loop dimulai
+
+ total_omset <-- 0
+ jumlah_transaksi <-- 0
+ riwayat_transaksi <-- ""  // String kosong untuk log
+
+// Variabel khusus untuk logika VOID
+ harga_transaksi_terakhir <-- 0
+ bisa_di_void <-- False
+
+// Tentukan harga menu (konstanta)
+ harga_kopi <-- 18000
+ harga_teh <-- 15000
+ harga_roti <-- 10000
+
+PRINT "--- Sistem Kasir 'Kafe 5 Transaksi' Dibuka ---"
+
+// --- 2. LOOP UTAMA (UNTUK 5 AKSI) ---
+// Gunakan loop FOR untuk 5 iterasi/aksi
+
+FOR i FROM 1 <-- 5
+    // 2a. Tampilkan Menu dan State Saat Ini
+    PRINT "--- Aksi ke-" + i + " dari 5 ---"
+    PRINT "Omset Saat Ini: Rp" + total_omset
+    PRINT "1. Jual Kopi (Rp" + harga_kopi + ")"
+    PRINT "2. Jual Teh (Rp" + harga_teh + ")"
+    PRINT "3. Jual Roti (Rp" + harga_roti + ")"
+    PRINT "4. VOID (Batalkan Transaksi Terakhir)"
+    PRINT "5. Selesai (Tutup Kasir)"
+
+    // 2b. Dapatkan Input dari User
+    GET pilihan FROM USER
+
+    // 2c. Logika Transisi (Cabang IF/ELSE IF/ELSE)
+    IF pilihan IS "1" THEN
+        // AKSI: Jual Kopi
+         total_omset <-- total_omset + harga_kopi
+         jumlah_transaksi <-- jumlah_transaksi + 1
+         harga_transaksi_terakhir <-- harga_kopi
+         bisa_di_void <-- True
+        PRINT "Berhasil menjual Kopi. Omset sekarang: Rp" + total_omset
+        APPEND "Aksi " + i + ": Jual Kopi - Rp" + harga_kopi + "\n" <-- riwayat_transaksi
+
+    ELSE IF pilihan IS "2" THEN
+        // AKSI: Jual Teh
+         total_omset <-- total_omset + harga_teh
+         jumlah_transaksi <-- jumlah_transaksi + 1
+         harga_transaksi_terakhir <-- harga_teh
+         bisa_di_void <-- True
+        PRINT "Berhasil menjual Teh. Omset sekarang: Rp" + total_omset
+        APPEND "Aksi " + i + ": Jual Teh - Rp" + harga_teh + "\n" <-- riwayat_transaksi
+
+    ELSE IF pilihan IS "3" THEN
+        // AKSI: Jual Roti
+         total_omset <-- total_omset + harga_roti
+         jumlah_transaksi <-- jumlah_transaksi + 1
+         harga_transaksi_terakhir <-- harga_roti
+         bisa_di_void <-- True
+        PRINT "Berhasil menjual Roti. Omset sekarang: Rp" + total_omset
+        APPEND "Aksi " + i + ": Jual Roti - Rp" + harga_roti + "\n" <-- riwayat_transaksi
+
+    ELSE IF pilihan IS "4" THEN
+        // AKSI: VOID (Dengan Guard Condition)
+        IF bisa_di_void IS True THEN
+            // VOID Sukses
+             total_omset <-- total_omset - harga_transaksi_terakhir
+             jumlah_transaksi <-- jumlah_transaksi - 1
+            PRINT "Berhasil membatalkan transaksi Rp" + harga_transaksi_terakhir
+            APPEND "Aksi " + i + ": VOID - Rp" + harga_transaksi_terakhir + " dibatalkan\n" <-- riwayat_transaksi
+            
+            // PENTING: Matikan flag setelah void
+             bisa_di_void <-- False
+             harga_transaksi_terakhir <-- 0
+        ELSE
+            // VOID Gagal
+            PRINT "Gagal VOID. Tidak ada transaksi terakhir untuk dibatalkan."
+            APPEND "Aksi " + i + ": VOID - Gagal (Tidak ada transaksi)\n" <-- riwayat_transaksi
+        END IF
+
+    ELSE IF pilihan IS "5" THEN
+        // AKSI: Selesai
+        PRINT "Sistem kasir ditutup..."
+        APPEND "Aksi " + i + ": Selesai (Tutup Kasir).\n" <-- riwayat_transaksi
+        
+        // PENTING: Keluar dari loop lebih awal
+        BREAK LOOP
+
+    ELSE
+        // AKSI: Input Tidak Valid
+        PRINT "Pilihan tidak dikenal. Silakan coba lagi."
+        APPEND "Aksi " + i + ": Input tidak valid ('" + pilihan + "')\n" <-- riwayat_transaksi
+    
+    END IF
+
+END FOR
+
+// --- 3. LAPORAN AKHIR (ELAH LOOP) ---
+// Kode ini hanya berjalan setelah loop selesai (5 aksi atau 'break')
+
+PRINT "\n--- LAPORAN AKHIR PENJUALAN ---"
+PRINT "Total Omset: Rp" + total_omset
+PRINT "Total Transaksi Berhasil: " + jumlah_transaksi
+PRINT "\n--- Riwayat Transaksi ---"
+PRINT riwayat_transaksi
+
+END PROGRAM

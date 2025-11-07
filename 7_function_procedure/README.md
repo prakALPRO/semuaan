@@ -263,20 +263,45 @@ if __name__ == "__main__":
 
 -----
 
-### 🎯 Misi Refactoring 
+## Misi Refactoring menjadi procedure/ function
+GOAL: bikin minimal 3 dari antara ini semua (atau klo mau hardcore, sekalian semuanya)
+
+nilai jika berhasil menyelesaikan function / procedure sebanyak:
+ 3 = 60
+ 5 = 80
+ 7 = 100
 
 
-**Tugas Utamanya:**
+### 🟢 Level: Mudah
 
-1.  **Ekstrak `start_battle()`:**
-    Blok `if target_cell == 'E':` sekarang berisi *seluruh* `while` loop pertarungan. Ini adalah kandidat utama untuk diekstrak menjadi fungsi `start_battle()`.
-2.  **Tantangan Parameter & Return:**
-      * Fungsi `start_battle()` ini perlu menerima (minimal) `player_hp` dan `enemy_name`.
-      * Fungsi ini harus **me-return (mengembalikan)** beberapa hasil\!
-          * `new_player_hp` (karena HP player mungkin berkurang)
-          * `battle_result` (Misalnya: `'WIN'`, `'FLEE'`, `'LOSE'`)
-3.  **Tantangan State Management:**
-      * Di dalam `main` loop, Anda harus memeriksa `battle_result` yang dikembalikan itu.
-      * Jika `result == 'WIN'`: Anda harus memindahkan 'P' secara manual di `main`.
-      * Jika `result == 'FLEE'`: Anda tidak melakukan apa-apa (player tetap di `old_pos`).
-      * Jika `result == 'LOSE'`: Anda harus menghentikan `main` loop (`is_running = False`).
+Fungsi-fungsi ini biasanya pendek, memiliki satu tanggung jawab yang jelas, dan tidak mengelola *state* yang kompleks.
+
+| Nama Fungsi / Prosedur | Argumen yang Dibutuhkan | Nilai Kembali (Return Value) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `clear_screen` | `(Tidak ada)` | `Tidak ada (Prosedur)` | Membersihkan layar terminal (`clear` atau `cls`). |
+| `get_player_input` | `(Tidak ada)` | `string` | Menunggu user menekan tombol dan mengembalikan input tersebut (misal: 'w', 'a', 's', 'd', 'x'). |
+| `initialize_map` | `map_data` (list of string) | `list` (Grid peta) | Mengonversi data peta statis (`MAP_DATA`) menjadi grid 2D (list of list) yang bisa dimodifikasi. |
+| `calculate_new_position` | `player_y` (int)<br>`player_x` (int)<br>`key` (string) | `tuple` (new\_y, new\_x) | Menghitung *potensi* posisi baru berdasarkan posisi lama dan input tombol. Tidak memvalidasi gerakan. |
+| `move_player` | `map_grid` (list of list)<br>`old_y` (int)<br>`old_x` (int)<br>`new_y` (int)<br>`new_x` (int) | `Tidak ada (Prosedur)` | Memperbarui `map_grid` dengan menghapus 'P' dari posisi lama dan meletakkannya di posisi baru. |
+
+-----
+
+### 🟡 Level: Sedang
+
+Fungsi-fungsi ini melibatkan perulangan (loop) pada struktur data (seperti grid peta) untuk mencari atau menampilkan sesuatu.
+
+| Nama Fungsi / Prosedur | Argumen yang Dibutuhkan | Nilai Kembali (Return Value) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `find_start_position` | `map_grid` (list of list)<br>`char_to_find` (string) | `tuple` (y, x) atau `None` | Mencari koordinat (y, x) dari karakter pertama yang ditemukan (misal 'P') di dalam grid. |
+| `render_game` | `map_grid` (list of list)<br>`player_y` (int)<br>`player_x` (int)<br>`player_hp` (int)<br>`player_hp_max` (int)<br>`view_radius` (int) | `Tidak ada (Prosedur)` | Menggambar seluruh tampilan game, termasuk HUD (HP) dan peta dengan *Field of View* (kabut '?'). |
+
+-----
+
+### 🔴 Level: Sulit / Kompleks
+
+Fungsi-fungsi ini mengelola *state* yang kompleks dan/atau memiliki *loop* (perulangan) sendiri.
+
+| Nama Fungsi / Prosedur | Argumen yang Dibutuhkan | Nilai Kembali (Return Value) | Deskripsi |
+| :--- | :--- | :--- | :--- |
+| `start_battle` | `player_hp` (int)<br>`player_hp_max` (int) | `tuple` (string, int) | **Fungsi Kunci.** Menjalankan *loop pertarungan* terpisah. Mengembalikan **hasil** (`"WIN"`, `"LOSE"`, `"FLEE"`) dan **HP player terbaru** setelah pertarungan. |
+| `main` | `(Tidak ada)` | `Tidak ada (Prosedur)` | **Fungsi Orkestrator.** Menginisialisasi game dan menjalankan *game loop* utama, mengoordinasikan semua fungsi/prosedur lain dan mengelola *state* utama (posisi player, HP, dll). |

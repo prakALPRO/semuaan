@@ -267,9 +267,9 @@ if __name__ == "__main__":
 GOAL: bikin minimal 3 dari antara ini semua (atau klo mau hardcore, sekalian semuanya)
 
 nilai jika berhasil menyelesaikan function / procedure sebanyak:
- 3 = 60
- 5 = 80
- 7 = 100
+- 3 = 60
+- 5 = 80
+- 7 = 100
 
 
 ### 🟢 Level: Mudah
